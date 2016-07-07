@@ -1,0 +1,74 @@
+body {
+  background-color: $black;
+}
+
+.video-container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+
+  video {
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+  }
+}
+
+.first-header {
+  margin-top: 300px;
+}
+
+.btn {
+
+}
+
+.btn-special {
+  border: 2px solid white;
+  border-radius: 36px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}
+
+.city-directory, .quote-directory {
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+
+.carousel-control.right {
+  right: -100px;
+}
+
+.carousel-control.left {
+  left: -100px;
+}
+
+.footer {
+  background-color: $transparent-white;
+  padding-top: 30px;
+}
+
+.modal {
+  img {
+    max-width: 100%;
+  }
+
+  .prev-image{
+    position: absolute;
+    left: -30px;
+  }
+  .next-image{
+    position: absolute;
+    right: -30px;
+  }
+}

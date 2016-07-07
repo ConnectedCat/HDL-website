@@ -1,0 +1,90 @@
+body, h1, h1, h3, h4, h5, h6, a {
+
+  color: $white;
+}
+
+a:hover,
+a:focus,
+a:active,
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.baskerville {
+  font-family: 'Baskerville', serif;
+}
+
+.bodoni {
+  font-family: 'Bodoni Ornaments', serif;
+}
+
+.osaka {
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.first-header {
+  font-style: italic;
+
+  @media (min-width: 768px){
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 63px;
+    }
+  }
+
+  @media (min-width: 992px){
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 90px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    h1 {
+      font-size: 75px;
+    }
+
+    h2 {
+      font-size: 135px;
+    }
+  }
+}
+
+.city-directory, .btn-special {
+  font-style: italic;
+  font-weight: 700;
+
+  @media (min-width: 768px){
+    font-size: 30px;
+  }
+
+  @media (min-width: 992px){
+    font-size: 50px;
+  }
+
+  @media (min-width: 1200px){
+    font-size: 70px;
+  }
+}
+
+.footer {
+  h1, h1, h3, h4, h5, h6, p, a {
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding: 0px;
+    list-style: none;
+  }
+
+}
