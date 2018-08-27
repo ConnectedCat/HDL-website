@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "hygienic dress league website",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
