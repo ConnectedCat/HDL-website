@@ -2,9 +2,8 @@
   "name": "hygienic-dress-league-website",
   "version": "0.0.1",
   "description": "hygienic dress league website",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "dependencies": {
-    "gulp-sass": "^2.0.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
