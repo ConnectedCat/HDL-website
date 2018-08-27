@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 
-gulp.task('default', function() {
+gulp.task('build', function() {
   return gulp.src('./build/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('./static/css'));
@@ -12,5 +12,5 @@ gulp.task('default', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-  gulp.watch('./build/*.scss', {debounceDelay: 500}, ['default']);
+  gulp.watch('./build/*.scss', {debounceDelay: 500}, ['build']);
 });
