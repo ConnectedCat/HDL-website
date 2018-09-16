@@ -1,10 +1,16 @@
 $(document).ready(function(){
 
   //let's swap 'em videos
-  $('body').click(function() {
-    videoSwap();
-    fontUpdate();
+  $('body').click(function(e){
+    
+    if(!$(e.currentTarget).hasClass('js-font-switch')){
+      videoSwap();
+    }
   }); //end of video swapping on click in 'body'
+
+  $('.js-font-switch').click(function(){
+    fontUpdate();
+  }); //end of font update calls
 
   //video shuld always take full page height
   $('.full-height').height($(window).height());
@@ -147,18 +153,18 @@ var verticalCenter = function(element){
 }
 
 var fontUpdate = function(){
-  if($('body').hasClass('osaka')){
-    $('body').addClass('bodoni').removeClass('osaka');
+  if($('.js-font-switch').hasClass('osaka')){
+    $('.js-font-switch').addClass('bodoni').removeClass('osaka');
     var textNodes = textNodesUnder(document.body);
     textNodes.forEach(function(textNode){
       textNode.textContent = textNode.prevTextContent;
     });
   }
-  else if ($('body').hasClass('bodoni')) {
-    $('body').addClass('baskerville').removeClass('bodoni');
+  else if ($('.js-font-switch').hasClass('bodoni')) {
+    $('.js-font-switch').addClass('baskerville').removeClass('bodoni');
   }
-  else if ($('body').hasClass('baskerville')) {
-    $('body').addClass('osaka').removeClass('baskerville');
+  else if ($('.js-font-switch').hasClass('baskerville')) {
+    $('.js-font-switch').addClass('osaka').removeClass('baskerville');
     var textNodes = textNodesUnder(document.body);
     textNodes.forEach(function(textNode){
       textNode.prevTextContent = textNode.textContent;
@@ -172,7 +178,7 @@ var fontUpdate = function(){
     });
   }
   else {
-    $('body').addClass('baskerville');
+    $('.js-font-switch').addClass('baskerville');
   }
 }
 

@@ -114,8 +114,13 @@ body {
 
 .modal .prev-image {
   position: absolute;
-  left: -30px; }
+  left: -30px;
+  min-height: 35px; }
 
 .modal .next-image {
   position: absolute;
-  right: -30px; }
+  right: -30px;
+  min-height: 35px; }
+
+.modal .alert {
+  margin-bottom: 0px; }
