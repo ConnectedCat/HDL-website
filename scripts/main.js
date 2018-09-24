@@ -8,12 +8,13 @@ $(document).ready(function(){
     }
   }); //end of video swapping on click in 'body'
 
-  $('.js-font-switch').click(function(){
+  $('.js-font-switch').click(function(e){
+    e.stopPropagation();
     fontUpdate();
   }); //end of font update calls
 
   //video shuld always take full page height
-  $('.full-height').height($(window).height());
+  //$('.full-height').height($(window).height());
   //center video in the window
   $('video').bind('loadeddata', function(){
     centerVideo();
@@ -47,11 +48,10 @@ $(document).ready(function(){
 $(window).load(function(){
   //let's center the video
   centerVideo();
-  verticalCenter($('.vertical-center'));
 });
 
 $(window).resize(function(){
-  $('.full-height').height($(window).height());
+  //$('.full-height').height($(window).height());
   centerVideo();
 });
 
@@ -145,11 +145,6 @@ var videoSourceUpdate = function(vContainer, newVideo){
       $(this).attr('src', 'assets/videos/'+newVideo+'.mp4')
     }
   })
-}
-
-var verticalCenter = function(element){
-  var marg = element.parent().height()/2 - element.height()/2;
-  $(element).css('margin-top', marg);
 }
 
 var fontUpdate = function(){
