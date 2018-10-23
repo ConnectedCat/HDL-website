@@ -60,6 +60,11 @@ body {
   left: -100px;
 }
 
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  font-size: 30px;
+}
+
 .footer {
   background-color: $transparent-white;
   padding-top: 30px;

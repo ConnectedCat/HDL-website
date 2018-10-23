@@ -72,7 +72,7 @@ a:active,
   letter-spacing: 2px; }
 
 #carousel-testimonials {
-  font-size: 20px; }
+  font-size: 18px; }
   @media (min-width: 768px) {
     #carousel-testimonials {
       font-size: 26px; } }
@@ -137,6 +137,10 @@ body {
 
 .carousel-control.left {
   left: -100px; }
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  font-size: 30px; }
 
 .footer {
   background-color: rgba(255, 255, 255, 0.95);
