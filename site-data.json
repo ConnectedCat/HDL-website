@@ -1,26 +1,28 @@
-[{
-  "videos": {
-    "videoOne": "background-one",
-    "videoTwo": "background-two",
-    "videoThree": "background-three"
-  },
-  "fonts":["baskerville", "bodoni", "osaka"],
-  "images": {
-    "Madrid": ["madridweb.png", "madriddoor.png", "pullingstrings.png"],
-    "Detroit":["Activation_Ceremony.png", "IMGP0629.png", "IMG_1769.png", "IMG_7660.png", "CassExecutive.png", "IMGP0635.png", "IMG_1936.png", "Sequence1.png", "Creation_of_a_Brand.png", "IMG_1161.png", "IMG_2646.png", "SteamProjection.png", "GAR3.png", "IMG_1174.png", "IMG_2733.png", "brand_take_off1.gif", "HDLCharlevoixHotel(detail2).png", "IMG_1233.png", "IMG_2923.png", "hygienicDressLeagueArt3.png", "HDLCharlevoixHotel.png", "IMG_1238.png", "IMG_2956.png", "hygienicDressLeagueArt6.png", "HDLFactory2.png", "IMG_1241.png", "IMG_2994.png", "hygienicdressleague-bird.gif", "HDLRivertown.png", "IMG_1242.png", "IMG_7628.png", "southShotWWaveDetial.png", "HDLboardmeetingMB.png", "IMG_1244.png", "IMG_7658.png"],
-    "Berlin": ["BerlinExecutives.png", "BerlinTransporters.png", "LouisHDLBerlin.png"],
-    "Cleveland": ["clevelandDay1.png", "clevelandNight.png", "lemonadePic.png"],
-    "Honoloulu": ["IMG_1806.png"],
-    "LA": ["HDL_LA.png"],
-    "LasVegas": ["TPLasVegas.png"],
-    "Lisbon": ["VULisboa1.png", "eaglelanded1.png"],
-    "Lodz": ["Female_extractor.png", "Maleextractor2.png", "MaleextractorLODZ.png", "Pigeon.png", "Transporters_LODZ.jpg", "executiveLODZ.png"],
-    "London": ["BaconSt.png", "Carpark.png", "RooftopExtractor.png", "villageundergorund.png"],
-    "NewOrleans": ["HDLNOLA1.png"],
-    "NewYorkCity": ["NYC_Hanksy_1.png", "NYC_Hanksy_3.png", "NYC_Hanksy_4.png"],
-    "Oakland": ["1c.png", "3c.png"],
-    "PortAustin": ["2.png", "agnightwide.png", "sunny3.png"],
-    "Toledo": ["IMG_7608.png", "IMG_7627.png"],
-    "Toronto": ["IMG_2417.png", "IMG_2423.png", "IMG_2438.png", "Toronto_Amy_Peebles_s.png"]
+[
+  {
+    "videos": {
+      "videoOne": "background-one",
+      "videoTwo": "background-two",
+      "videoThree": "background-three"
+    },
+    "fonts":["baskerville", "bodoni", "osaka"],
+    "images": {
+      "Madrid": ["madridweb.png", "madriddoor.png", "pullingstrings.png"],
+      "Detroit":["Activation_Ceremony.png", "IMGP0629.png", "IMG_1769.png", "IMG_7660.png", "CassExecutive.png", "IMGP0635.png", "IMG_1936.png", "Sequence1.png", "Creation_of_a_Brand.png", "IMG_1161.png", "IMG_2646.png", "SteamProjection.png", "GAR3.png", "IMG_1174.png", "IMG_2733.png", "brand_take_off1.gif", "HDLCharlevoixHotel(detail2).png", "IMG_1233.png", "IMG_2923.png", "hygienicDressLeagueArt3.png", "HDLCharlevoixHotel.png", "IMG_1238.png", "IMG_2956.png", "hygienicDressLeagueArt6.png", "HDLFactory2.png", "IMG_1241.png", "IMG_2994.png", "hygienicdressleague-bird.gif", "HDLRivertown.png", "IMG_1242.png", "IMG_7628.png", "southShotWWaveDetial.png", "HDLboardmeetingMB.png", "IMG_1244.png", "IMG_7658.png"],
+      "Berlin": ["BerlinExecutives.png", "BerlinTransporters.png", "LouisHDLBerlin.png"],
+      "Cleveland": ["clevelandDay1.png", "clevelandNight.png", "lemonadePic.png"],
+      "Honoloulu": ["IMG_1806.png"],
+      "LA": ["HDL_LA.png"],
+      "LasVegas": ["TPLasVegas.png"],
+      "Lisbon": ["VULisboa1.png", "eaglelanded1.png"],
+      "Lodz": ["Female_extractor.png", "Maleextractor2.png", "MaleextractorLODZ.png", "Pigeon.png", "Transporters_LODZ.jpg", "executiveLODZ.png"],
+      "London": ["BaconSt.png", "Carpark.png", "RooftopExtractor.png", "villageundergorund.png"],
+      "NewOrleans": ["HDLNOLA1.png"],
+      "NewYorkCity": ["NYC_Hanksy_1.png", "NYC_Hanksy_3.png", "NYC_Hanksy_4.png"],
+      "Oakland": ["1c.png", "3c.png"],
+      "PortAustin": ["2.png", "agnightwide.png", "sunny3.png"],
+      "Toledo": ["IMG_7608.png", "IMG_7627.png"],
+      "Toronto": ["IMG_2417.png", "IMG_2423.png", "IMG_2438.png", "Toronto_Amy_Peebles_s.png"]
+    }
   }
-}]
+]

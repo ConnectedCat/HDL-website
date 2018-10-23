@@ -13,13 +13,6 @@ $(document).ready(function(){
     fontUpdate();
   }); //end of font update calls
 
-  //video shuld always take full page height
-  //$('.full-height').height($(window).height());
-  //center video in the window
-  $('video').bind('loadeddata', function(){
-    centerVideo();
-  });
-
   $('.js-modal-trigger').click(function(e){
     openImageModal(e);
   });
@@ -33,6 +26,7 @@ $(document).ready(function(){
     $('#stockFormButton').addClass('hidden');
     $('#stockFormContainer').removeClass('hidden');
     $('#stockPurchaseSection').height($(window).height());
+    $('#stockPurchaseSection').get(0).scrollIntoView();
   });
 
   $('#stockForm').submit(function(e){
@@ -44,17 +38,6 @@ $(document).ready(function(){
     updateImageModal(e);
   });
 });
-
-$(window).load(function(){
-  //let's center the video
-  centerVideo();
-});
-
-$(window).resize(function(){
-  //$('.full-height').height($(window).height());
-  centerVideo();
-});
-
 
 var videoSwap = function(){
   var vContainer = $('.video-container');
@@ -127,13 +110,6 @@ var updateImageModal = function(event){
   }
   var city = $('img', '.modal-content').attr('alt');
   $('img', '.modal-content').attr('src', 'assets/images/'+city+'/'+newImage);
-}
-
-var centerVideo = function(){
-  if($('.video-container').width() < $('video', '.video-container').width()){
-    var leftOffset = $('video', '.video-container').width()/2 - $('.video-container').width()/2;
-    $('video', '.video-container').css('left', 0-leftOffset);
-  }
 }
 
 var videoSourceUpdate = function(vContainer, newVideo){
