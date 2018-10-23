@@ -1,5 +1,6 @@
 body {
   background-color: $black;
+  scroll-behavior: smooth;
 }
 
 .video-container{
@@ -50,6 +51,7 @@ body {
 .city-directory, .quote-directory {
   padding: 0;
   list-style: none;
+  min-width: 70vw;
 }
 
 .carousel-control.right, .carousel-control.left {

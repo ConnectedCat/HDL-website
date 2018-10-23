@@ -39,6 +39,21 @@ a:active,
     .first-header h2 {
       font-size: 135px; } }
 
+.first-header .osaka h1 {
+  font-size: 30px; }
+
+@media (min-width: 992px) {
+  .first-header .osaka h1 {
+    font-size: 42px; }
+  .first-header .osaka h2 {
+    font-size: 72px; } }
+
+@media (min-width: 1200px) {
+  .first-header .osaka h1 {
+    font-size: 58px; }
+  .first-header .osaka h2 {
+    font-size: 104px; } }
+
 .city-directory, .btn-special {
   font-style: italic;
   font-weight: 700;
@@ -57,7 +72,13 @@ a:active,
   letter-spacing: 2px; }
 
 #carousel-testimonials {
-  font-size: 30px; }
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    #carousel-testimonials {
+      font-size: 26px; } }
+  @media (min-width: 992px) {
+    #carousel-testimonials {
+      font-size: 30px; } }
 
 .footer h1, .footer h1, .footer h3, .footer h4, .footer h5, .footer h6, .footer p, .footer a {
   color: #000000;
@@ -68,7 +89,8 @@ a:active,
   list-style: none; }
 
 body {
-  background-color: #000000; }
+  background-color: #000000;
+  scroll-behavior: smooth; }
 
 .video-container {
   position: fixed;
@@ -109,7 +131,8 @@ body {
 
 .city-directory, .quote-directory {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  min-width: 70vw; }
 
 .carousel-control.right, .carousel-control.left {
   background: none; }
