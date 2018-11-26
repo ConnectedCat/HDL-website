@@ -32,6 +32,34 @@ $(document).ready(function(){
   $('#stockForm').submit(function(e){
     console.log( JSON.stringify($( this ).serializeArray()) );
     e.preventDefault();
+    var form = this;
+    $('.form-group', form).removeClass('has-error');
+    $('.help-block', form).remove();
+    $('.alert', form).remove();
+
+    $.post(e.currentTarget.action, $( this ).serializeArray())
+      .done(function(data){
+        var data = jQuery.parseJSON(data);
+        if(data.success){
+          $(form).prepend('<div class="alert alert-success" role="alert">' + data.message + '</div>');
+        }
+        else {
+          if(Object.keys(data.errors).length > 0){
+            $.each(data.errors, function(key, value){
+              console.log(key);
+              console.log(value);
+              console.log(form);
+              $('#'+key, form)
+                .parent('.form-group')
+                .addClass('has-error')
+                .append('<span class="help-block">' + value + '</span>');
+            });
+          }
+          else {
+            $(form).prepend('<div class="alert alert-danger" role="alert">An unknown error has occured. Please try again. Sorry.</div>');
+          }
+        }
+      });
   });
 
   $('body').on('click', '.js-modal-update', function(e){
